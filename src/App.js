@@ -18,9 +18,9 @@ function App() {
     <Router>
       <Switch>
         <Route path="/signup" component={Signup} />
-        <PrivateRoute exact path="/" component={Dashboard} />
+        <PrivateRoute exact path="/dashboard" component={Dashboard} />
         <PrivateRoute exact path="/update-profile" component={UpdateProfile} />
-        <Route path="/login" component={Login} />
+        <Route path="/" component={Login} />
         <Route path="/forgot-password" component={ForgotPassword} />
       </Switch>
     </Router>
